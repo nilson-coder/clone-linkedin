@@ -17,7 +17,6 @@ const LeftColumn: React.FC<LoadingProps> = ({ isLoading }) => {
           <HashtagPanel />
         </>
       )}
-
     </Container>
   );
 };

@@ -10,22 +10,20 @@ import RightColumn from '../RightColumn';
 import { Container } from './styles';
 
 const Layout: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false);
+      setLoading(false);
     }, 1000);
-  }, [])
+  }, []);
 
   return (
     <Container>
       <MobileHeader />
       <DesktopHeader />
 
-      <span>
-        <AdBanner />
-      </span>
+      <span>{!isLoading && <AdBanner />}</span>
 
       <main>
         <LeftColumn isLoading={isLoading} />
@@ -34,7 +32,6 @@ const Layout: React.FC = () => {
       </main>
     </Container>
   );
-
 };
 
 export default Layout;

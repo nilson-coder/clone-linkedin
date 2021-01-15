@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { 
-  Container, 
-  Wrapper, 
-  LinkedInIcon, 
-  SearchInput, 
-  HomeIcon, 
-  NotificationsIcon, 
-  ProfileCircle, 
-  CaretDownIcon 
+import {
+  Container,
+  Wrapper,
+  LinkedInIcon,
+  SearchInput,
+  HomeIcon,
+  NotificationsIcon,
+  ProfileCircle,
+  CaretDownIcon,
 } from './styles';
 
-const DesktopHeader: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <Container>
       <Wrapper>
@@ -41,6 +41,6 @@ const DesktopHeader: React.FC = () => {
       </Wrapper>
     </Container>
   );
-}
+};
 
-export default DesktopHeader;
+export default Header;

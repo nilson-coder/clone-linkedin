@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { GrLinkedin } from 'react-icons/gr';
 import { AiFillHome, AiOutlineBell, AiFillCaretDown } from 'react-icons/ai';
 
-export const Container = styled.header`
+export const Container = styled.div`
   background: var(--color-header);
   padding: 0 30px;
 
@@ -14,7 +14,7 @@ export const Container = styled.header`
 
   display: none;
 
-  @media(min-width: 1180px) {
+  @media (min-width: 1180px) {
     display: block;
   }
 `;
@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
   .right nav {
     height: 100%;
 
-    button{
+    button {
       background: none;
       border: 0;
       outline: 0;
@@ -54,8 +54,8 @@ export const Wrapper = styled.div`
       &:hover {
         color: var(--color-white);
       }
-      &.active{
-        border-bottom: 2px solid var(--color-white)
+      &.active {
+        border-bottom: 2px solid var(--color-white);
       }
     }
   }
@@ -65,10 +65,10 @@ export const LinkedInIcon = styled(GrLinkedin)`
   height: 34px;
   width: 34px;
   color: var(--color-linkedin);
-  background: #fff;
+  background-color: #fff;
   border-radius: 4px;
   flex-shrink: 0;
-`; 
+`;
 
 export const SearchInput = styled.input`
   margin-left: 12px;
@@ -81,12 +81,12 @@ export const SearchInput = styled.input`
   outline: none;
   border-radius: 2px;
 
-  & focus {
+  &:focus {
     background: var(--color-white);
   }
 `;
 
-const generalIconCSS = css `
+const generalIconCSS = css`
   width: 24px;
   height: 24px;
 `;
